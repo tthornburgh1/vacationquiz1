@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Discovering Your Next Dream Vacation</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Where in the world would you enjoy your vacation time the most?</h1>
+
+      <p>To better understand where you should go, let's see what kind of vacations interest you:</p>
+
+      <form id="vacationquiz">
+        <label for="terrain">Which sounds the best to you?</label>
+        <select id="terrain">
+          <option value="mountains">Massive mountain ranges</option>
+          <option value="beaches">Beautiful beaches</option>
+          <option value="city">A bustling city</option>
+        </select>
+
+        <p>
+        <label for="transporting">What's your ideal way to get around?</label>
+        <select id="transporting">
+          <option value="hiking">Ideally I'd be hiking everywhere</option>
+          <option value="car">By a car I rented, or I could walk</option>
+          <option value="taxi">By taxis or walking</option>
+        </select>
+        </p>
+
+        <p>
+        <label for="development">How developed would you like the area you're visiting to be?</label>
+        <select id="development">
+          <option value="remote">Remote</option>
+          <option value="somewhat">A little out of my comfort zone, but somewhat developed</option>
+          <option value="developed">I'd like to stay in my comfort zone</option>
+        </select>
+        </p>
+
+        <p>
+        <label for="language">How comfortable are you not understanding the native language?</label>
+        <select id="language">
+          <option value="comfortable">It'd be good to learn a new language</option>
+          <option value="little">I'd like to at least have my English understood</option>
+          <option value="uncomfortable">I'd like everyone to speak English fluently</option>
+        </select>
+        </p>
+
+        <p>
+        <label for="food">What are you hoping to get out of the food?</label>
+        <select id="food">
+          <option value="notpriority">I can get my culture elsewhere</option>
+          <option value="bigpriority">That's the main reason I'm traveling</option>
+          <option value="western">I'd like it to taste like I'm back home</option>
+        </select>
+        </p>
+
+        <button type="submit" class="btn btn-success">Show me where I should go!</button>
+      </form>
+
+      <div id="answer">
+        <p>You should vote <span id="meter"></span> in the upcoming elections. Just don't vote Trump.</p>
+      </div>
+    </div>
+  </body>
+</html>
