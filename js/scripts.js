@@ -1,16 +1,20 @@
 $(document).ready(function() {
-  $("form#politicmeter").submit(function(event) {
+  $("form#vacationquiz").submit(function(event) {
 
     var answer = "";
-      if (abortion === 'prolife' && gay === 'antigay' && gun === 'progun');
-      answer = "Republican";
+      if (terrain === 'mountains' && transporting === 'hiking' && development === 'remote' && language === 'comfortable' && food === 'notpriority');
+      answer = "Kathmandu";
 
     var answer = "";
-      if (abortion === 'prochoice' && gay === 'progay' && gun === 'antigun');
-      answer = "Democrat";
+      else if (terrain === 'city' && transporting === 'car' && development === 'somewhat' && language === 'little' && food === 'bigpriority');
+      answer = "Florence";
 
-      $("#meter").empty().append(quote);
+    var answer = "";
+      else (terrain === 'beaches' && transporting === 'taxi' && development === 'developed' && language === 'uncomfortable' && food === 'western');
+      answer = "Sydney";
+
       $("#answer").show();
+      $("#meter").text(answer);
 
     event.preventDefault();
   });
