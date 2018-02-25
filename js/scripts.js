@@ -16,6 +16,9 @@ $(document).ready(function() {
     } else if (terrain === 'beaches' && transporting === 'taxi' && development === 'developed' && language === 'uncomfortable' && food === 'western') {
       answer = "C. Sydney, Australia";
     }
+     else {
+       none;
+     }
 
     $("#answer").show();
     $(".person1").text(person1Input);

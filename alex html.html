@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Vacation Finder!</title>
+</head>
+<body>
+  <div class="container">
+    <h2 style="text-align:center">Welcome to the EpiVacay Vacation Finder!</h2>
+    <div id="explainer" class="jumbotron">
+      <ul><p>How it Works</p>
+        <li>you answer a series of questions written by SCIENTISTS!</li>
+        <li>our <em>AMAZING</em> algorithm runs in the background</li>
+        <li>we show you the PERFECT vacation spot, personalized for you!</li>
+      </ul>
+    </div>
+
+    <div id="quiz" class="well">
+      <h3>Let's get started!</h3>
+      <form>
+        <ol>
+          <li>
+            <div class="form-group">
+              <label for="yourName">First, what is your first name?</label>
+              <input id="yourName" class="form-control" type="text">
+            </div>
+          </li>
+
+
+          <li>Out of the following, how would you describe yourself?</li>
+            <div class="radio">
+            <label for="location">
+              <input type="radio" name="customName" value=" the Great" checked>
+              <span class="answers">Great</span>
+            </label>
+            </div>
+            <div class="radio">
+              <label for="location">
+                <input type="radio" name="customName" value=" the Warrior">
+                <span class="answers">Warrior-like</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label for="location">
+                <input type="radio" name="customName" value=" the Mystic">
+                <span class="answers">Mystical</span>
+              </label>
+            </div>
+
+          <!-- use the first name and concatenate with other options, like alex the great;
+          radio option -->
+
+          <li>
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+          </li>
+        <!--use input id equals color -->
+
+          <li>What is your better, shampoo or conditioner?</li>
+          <div class="radio">
+          <label for="shampooChoice">
+            <input type="radio" name="shampooChoice" value="shampoo" checked>
+            <span class="answers">Shampoo</span>
+          </label>
+          </div>
+          <div class="radio">
+            <label for="location">
+              <input type="radio" name="shampooChoice" value="conditioner">
+              <span class="answers">Conditioner</span>
+            </label>
+          </div>
+
+          <li>Which of the following places would you want to go?</li>
+          <div class="radio">
+            <label>
+              <input type="radio" name="location" value="Dominican Republic" checked>
+              <span class="answers">Dominican Republic</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="location" value="Amalfi Coast">
+              <span class="answers">Amalfi Coast</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="location" value="The Great Reef Barrier">
+              <span class="answers">The Great Reef Barrier</span>
+            </label>
+          </div>
+        </ol>
+        <button type="submit" class="btn">Get Your Results!</button>
+      </form>
+    </div>
+
+    <div class="results" id="results1">
+      <h1>Congrats, <span class="yourNewName"></span> Your dream location is The Bahamas!</h1>
+      <img src="img/bahamas.jpg" alt="The Bahamas">
+      <p>The Bahamas are a place where you can have fun in the sun. Wear what you want it's beautiful beaches. The community of laid-back locals will welcome you with open arms
+        and, if you're lucky, a giant glass of their local beer-like beverage, "sutmatcha".</p>
+    </div>
+
+    <div id="results2">
+      <h1>Congrats, <span class="yourNewName"></span> Your dream location is Italy!</h1>
+      <img src="img/amalfi.jpg" alt="The Amalfi Coast">
+      <p class="results">Or should we say Eat-aly? Take two weeks off work now and start planning your trip to the "Old Country of Love". Italy features the amazing food and wine you would expect,
+      but what you may be surprised by is the vast diversity of its landscapes. Mountains, beaches, vineyards, and destination spas abound! Have a glass of wine and relax.</p>
+    </div>
+
+    <div class"results" id="results3">
+      <h1>Congrats, <span class="yourNewName"></span> Your dream location is Australia!</h1>
+      <img src="img/kangaroo.jpg" alt="Australian Kangaroo">
+      <p>Oy, mate! Looks like you belong in the down unda! Better put on a pair of kangaroo boots and hop down to Sydney, Australia! From there, you'll be escorted by local chefs
+      across the country to Perth! Then, it's to the east coast, where you can snorkel, splunkel, scuba and surf along the Great Barrier Reef! Put some shrimp on the barbie!</p>
+    </div>
+
+
+      <!-- add if statements here -->
+
+</body>
+<html>
