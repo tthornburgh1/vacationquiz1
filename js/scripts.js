@@ -6,6 +6,7 @@ $(document).ready(function() {
     var development = $("input:radio[name=development]:checked").val();
     var language = $("input:radio[name=language]:checked").val();
     var food = $("input:radio[name=food]:checked").val();
+    var person1Input = $("input#person1").val();
 
     var answer = "";
       if (terrain === 'mountains' && transporting === 'hiking' && development === 'remote' && language === 'comfortable' && food === 'notpriority') {
@@ -17,7 +18,7 @@ $(document).ready(function() {
     }
 
     $("#answer").show();
-    $("#meter").text(answer);
+    $(".person1").text(person1Input);
 
     event.preventDefault();
   });
