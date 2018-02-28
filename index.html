@@ -11,9 +11,7 @@
     <div class="jumbotron">
       <h1>Where in the world would you enjoy your vacation time the most?</h1>
     </div>
-
       <p>To better understand where you should travel to, let's see what kind of vacations interest you:</p>
-
       <form id="vacationquiz">
       <label for="terrain">Which terrain sounds the best to you?</label>
         <div class="radio">
@@ -115,15 +113,33 @@
           </label>
         </div>
 
-      <div class="form-group">
-        <label for="person1">What is your name?</label>
-        <input id="person1" class="form-control" type="text">
-      </div>
-        <button type="submit" class="btn btn-success">Show me where I should go!</button>
+        <div class="form-group">
+          <label for="person1">Finally, what is your name?</label>
+          <input id="person1" class="form-control" type="text">
+        </div>
+      <button type="submit" class="btn btn-success">Show me where I should go!</button>
     </form>
 
-      <div id="answer">
-        <p><span class="person1"></span>, all of your answers were <span id="result"></span>should be the next spot on your vacation list!</p>
+      <div class="answer" id="answer1">
+        <h1><span class="person1"></span>, you selected all 'A' answers. Your next trip should be to Kathmandu,Nepal!</h1>
+        <img src="img/kathmandu.jpeg" alt="Kathmandu">
+        <p>For many, stepping off a plane into Kathmandu is a pupil-dilating experience, a riot of sights, sounds and smells that can quickly lead to sensory overload. Whether you’re barrelling through the traffic-jammed alleyways of the old town in a rickshaw, marvelling at the medieval temples or dodging trekking touts in the backpacker district of Thamel, Kathmandu can be an intoxicating, amazing and exhausting place.</p>
+      </div>
+
+      <div class="answer" id="answer2">
+        <h1><span class="person1"></span>, you selected all 'B' answers. Your next trip should be to Florence,Italy!</h1>
+        <img src="img/florence.jpeg" alt="Florence">
+        <p>Cradle of the Renaissance, romantic, enchanting and utterly irresistible, Florence (Firenze) is a place to feast on world-class art and gourmet Tuscan cuisine.</p>
+      </div>
+
+      <div class="answer" id="answer3">
+        <h1><span class="person1"></span>, you selected all 'C' answers. Your next trip should be to Sydney,Australia!</h1>
+        <img src="img/sydney.jpeg" alt="Sydney">
+        <p>Sydney, spectacularly draped around its glorious harbour and beaches, has a visual wow factor like few other cities. Scratch the surface and it only gets better.</p>
+      </div>
+
+      <div class="answer" id="answer4">
+        <h1><span class="person1"></span>, we couldn't find a perfect place for you on this quiz, but the world is still your oyster!!</h1>
       </div>
     </div>
   </body>

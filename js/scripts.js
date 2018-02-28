@@ -8,17 +8,27 @@ $(document).ready(function() {
     var food = $("input:radio[name=food]:checked").val();
     var person1Input = $("input#person1").val();
 
-    var answer = "";
-      if (terrain === 'mountains' && transporting === 'hiking' && development === 'remote' && language === 'comfortable' && food === 'notpriority') {
-      answer = "A. Kathmandu, Nepal";
+    if (terrain === 'mountains' && transporting === 'hiking' && development === 'remote' && language === 'comfortable' && food === 'notpriority') {
+      $("#answer2").hide()
+      $("#answer3").hide();
+      $("#answer4").hide();
+      $("#answer1").show();
     } else if (terrain === 'city' && transporting === 'car' && development === 'somewhat' && language === 'little' && food === 'bigpriority') {
-      answer = "B. Florence, Italy";
+      $("#answer1").hide()
+      $("#answer3").hide();
+      $("#answer4").hide();
+      $("#answer2").show();
     } else if (terrain === 'beaches' && transporting === 'taxi' && development === 'developed' && language === 'uncomfortable' && food === 'western') {
-      answer = "C. Sydney, Australia";
+      $("#answer1").hide()
+      $("#answer2").hide();
+      $("#answer4").hide();
+      $("#answer3").show();
+    } else {
+      $("#answer1").hide()
+      $("#answer2").hide();
+      $("#answer3").hide();
+      $("#answer4").show();
     }
-     else {
-       none;
-     }
 
     $("#answer").show();
     $(".person1").text(person1Input);
