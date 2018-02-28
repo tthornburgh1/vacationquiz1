@@ -1,5 +1,6 @@
 #answer1 {
   display: none;
+  
 }
 
 #answer2 {
@@ -12,4 +13,23 @@
 
 #answer4 {
   display: none;
+}
+
+jumbotron {
+  font-family: sans-serif;
+}
+
+h1 {
+  padding-left: 10px;
+  font-family: sans-serif;
+}
+
+#vacationquiz {
+  padding-left: 20px;
+}
+
+p {
+  padding-left: 15px;
+  font-size: 20px;
+  font-family: sans-serif;
 }

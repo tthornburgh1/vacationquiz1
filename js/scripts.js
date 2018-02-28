@@ -12,22 +12,22 @@ $(document).ready(function() {
       $("#answer2").hide()
       $("#answer3").hide();
       $("#answer4").hide();
-      $("#answer1").show();
+      $("#answer1").fadeIn();
     } else if (terrain === 'city' && transporting === 'car' && development === 'somewhat' && language === 'little' && food === 'bigpriority') {
       $("#answer1").hide()
       $("#answer3").hide();
       $("#answer4").hide();
-      $("#answer2").show();
+      $("#answer2").fadeIn();
     } else if (terrain === 'beaches' && transporting === 'taxi' && development === 'developed' && language === 'uncomfortable' && food === 'western') {
       $("#answer1").hide()
       $("#answer2").hide();
       $("#answer4").hide();
-      $("#answer3").show();
+      $("#answer3").fadeIn();
     } else {
       $("#answer1").hide()
       $("#answer2").hide();
       $("#answer3").hide();
-      $("#answer4").show();
+      $("#answer4").fadeOut();
     }
 
     $("#answer").show();
