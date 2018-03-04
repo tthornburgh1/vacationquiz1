@@ -49,7 +49,7 @@ $(document).ready(function() {
       $("#answer3").hide();
       $("#answer4").hide();
       $("#answer5").hide();
-      $("#answer6").fadeOut();
+      $("#answer6").fadeIn();
     }
 
     $("#answer").show();
